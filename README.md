@@ -4,6 +4,14 @@ Backgroud:
 	product a tidy data that combine both training and test data of 30 subjects
 	with 6 different activity.  After read the included README.txt file on dataset
 	each train and test data has three main files, 
+	
+Run Instruction:
+	1. Make sure you unzip project data getdata_projectfiles_UCI HAR Dataset.zip file into your R workspace.
+	2. Your R workspace should have folder "UCI HAR Dataset" contain all dataset
+	3. Put run_analysis.R script file on workspace
+	4. In R, >source("run_analysis.R")
+	
+	
 
 Logic of run_analysis.R:
 	1. First define variable called subject_column_name of both subject_train.txt and subject_test.txt.
