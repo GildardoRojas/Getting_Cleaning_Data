@@ -38,4 +38,13 @@ tidy_data <- rbind(train_data, test_data)
 #write to csv file
 write.csv(tidy_data, file="tidy_human_activity_smartphone_data.csv")
 
+library("plyr")
+#average of each measures for each activity and each subject. 
+subject_activity_measure_mean <- ddply(tidy_data, .(subject,activity_num), numcolwise(mean))
+
+#write to subject_activity_measure_mean.csv
+write.csv(subject_activity_measure_mean, file="subject_activity_measure_mean.csv")
+
+
+
 
