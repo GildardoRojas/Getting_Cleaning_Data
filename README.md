@@ -33,6 +33,9 @@ Logic of run_analysis.R:
 	14. Use cbind to combine test_subject, test_activity and test_mean_stddev_data
 	15. Use rbind to merge both train and test data, assign to tidy_data	
 	16. Write tidy_data to csv file called "tidy_human_activity_smartphone_data.csv"
+	17. Use ddply to find average of each measure by subject by activity number
+	18. Write to subject_activity_measure_mean.csv
+
 	
 	
 	
